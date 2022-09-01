@@ -116,7 +116,7 @@ const Search = ({ videos }: { videos: Video[] }) => {
   const [isAccounts, setIsAccounts] = useState(false);
   const { allUsers }: { allUsers: IUser[] } = useAuthStore();
 
-  const router = useRouter();
+  const router = useRouter(); //useRoute
   const { searchTerm }: any = router.query;
 
   const accounts = isAccounts ? "border-b-2 border-black" : "text-gray-400";
